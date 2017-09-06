@@ -20,8 +20,7 @@
 					<nav id="nav">
 						<a href="index.html">Inicio</a>
 						<a href="registro.html">Registro</a>
-                                                <a href="Administradores.html">Administrador</a>
-                                                <a href="AgenteServicio.html">Servicio</a>
+                                                <a href="inicioSesion.jsp">Iniciar sesion</a>
 						<!--<a href="elements.html">Elements</a>-->
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
@@ -41,25 +40,29 @@
 					<!-- Form -->
 				<h3>Datos del cliente:</h3>
                                     <hr>
-					<form method="post" action="after.html">
+					<form method="post" action="Registrar">
                                            <div class="row uniform">
                                                
 						<div class="4u 12u$(xsmall)">
-                                                    <input type="text" name="name" id="name" value="" placeholder="Nombre(s)" /></div>
+                                                    <input type="text" name="name" id="name"  placeholder="Nombre(s)" /></div>
                                                     <div class="4u 12u$(xsmall)">
-                                                     <input type="text" name="app" id="app" value="" placeholder="Apellido paterno" /></div>
+                                                     <input type="text" name="app" id="app"  placeholder="Apellido paterno" /></div>
                                                      <div class="4u 12u$(xsmall)">
-                                                      <input type="text" name="apm" id="apm" value="" placeholder="Apellido Materno" /></div>
+                                                      <input type="text" name="apm" id="apm"  placeholder="Apellido Materno" /></div>
                                                       <!-- Break -->
-                                                    <div class="6u 12u$(small)">
-                                                    <input type="email" name="email" id="email" value="" placeholder="Email" />
+                                                    <div class="4u 12u$(small)">
+                                                    <input type="email" name="email" id="email"  placeholder="Email" />
 						</div>
-                                                <div class="3u 12u$(small)">
-                                                    <input type="radio" id="priority-low" name="priority" checked>
+                                                <div class="4u 12u$(small)">
+                                                    <input type="password" name="pass" id="pass"  placeholder="Contraseña" />
+						</div>
+                                                      
+                                                <div class="2u 12u$(small)">
+                                                    <input type="radio" id="priority-low" name="sexo" value="0" checked>
                                                     <label for="priority-low">Hombre</label>
                                                 </div>
-						<div class="3u 12u$(small)">
-                                                    <input type="radio" id="priority-normal" name="priority">
+						<div class="2u 12u$(small)">
+                                                    <input type="radio" id="priority-normal" value="1" name="sexo">
                                                     <label for="priority-normal">Mujer</label>
 						</div>
                                                <!-- Break -->
@@ -69,13 +72,13 @@
                                                      <label for="dat">Fec. de Nacimiento:</label>
 						</div>
                                                <div class="2.5u 12u$(xsmall)">
-                                                    <input type="date" name="date" id="dat"  max="1930-12-31" min="2017-01-02" />
+                                                    <input type="date" name="date" id="dat"  max="2017-01-02" min="1930-12-31" />
 						</div>
                                                <div class="4u 12u$(xsmall)">
-                                                    <input type="text" name="num " id="cel" placeholder="Celular" />
+                                                    <input type="text" name="cel" id="cel" placeholder="Celular" />
 						</div>
 						<div class="4u 12u$(xsmall)">
-                                                    <input type="text" name="casa " id="casa" placeholder="Fijo" />
+                                                    <input type="text" name="casa" id="casa" placeholder="Fijo" />
 						</div>
                                                
 						</div>
@@ -89,16 +92,16 @@
                                                       <div class="3u 12u$(xsmall)">
                                                     <input type="text" name="calle" id="calle" value="" placeholder="Calle" /></div>
                                                     <div class="3u 12u$(xsmall)">
-                                                     <input type="text" name="numero" id="num" value="" placeholder="Numero" /></div>
+                                                     <input type="text" name="num" id="num" value="" placeholder="Numero" /></div>
                                                      <div class="3u 12u$(xsmall)">
-                                                      <input type="text" name="colonia" id="col" value="" placeholder="Colonia" /></div>
+                                                      <input type="text" name="col" id="col" value="" placeholder="Colonia" /></div>
                                                     <div class="3u 12u$(xsmall)">
                                                     <input type="text" name="codpos" id="codpos" value="" placeholder="Codigo Pöstal" /></div>
                                                    
                                                <div class="6u 12u$(xsmall)">
                                                    <input type="text" name="Estado" id="estado" value="" placeholder="Estado" /></div>
                                                     <div class="6u 12u$(xsmall)">
-                                                     <input type="text" name="delMun" id="delmun" value="" placeholder="Delegación o Municipio" /></div>
+                                                     <input type="text" name="delMun" id="delMun" value="" placeholder="Delegación o Municipio" /></div>
                                              </div>
                                                <br>
                                                <br>
